@@ -21,7 +21,6 @@
 .postContent2 {
     grid-area: content2;
 }
-
 article{
     display: grid;
     grid-template-columns: 1fr 1fr;

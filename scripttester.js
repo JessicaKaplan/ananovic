@@ -17,7 +17,6 @@ function showPosts1(data) {
         const clone = myTemplate.cloneNode(true);
         const postTitle1 = data.title.rendered;
         const postContent1 = data.content.rendered;
-
         /*const postTitle2 = data.title.rendered;
            const postContent2 = data.content.rendered;*/
         clone.querySelector(".postTitle1").textContent = postTitle1;
