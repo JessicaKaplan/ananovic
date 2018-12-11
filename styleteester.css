@@ -1,0 +1,34 @@
+.img1 {
+    grid-area: leftside;
+}
+
+.img2 {
+    grid-area: rightside;
+}
+
+.postTitle1 {
+    grid-area: title1;
+}
+
+.postTitle2 {
+    grid-area: title2;
+}
+
+.postContent1 {
+    grid-area: content1;
+}
+
+.postContent2 {
+    grid-area: content2;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "leftside title1"
+        "content1 content1"
+        "title2 rightside"
+        "content2 content2";
+}
