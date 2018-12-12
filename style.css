@@ -4,18 +4,18 @@ body {
   font-family: "GFS Didot", serif;
 }
 
-//general grid
+/*general grid*/
 grid-template-areas:
   "some logo lang"
   "nav nav nav"
 
-//grid for my story
+/*grid for my story*/
 grid-template-areas:
   "imgS1 . textS1"
   "textS2 . imgS2"
   ". footer .";
 
-//grid for my work
+/*grid for my work*/
 grid-template-areas:
     ". video ."
     "imgW1 . textW1"
