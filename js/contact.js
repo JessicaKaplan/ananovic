@@ -18,13 +18,13 @@ function showContact(data) {
         const facebookLink = data.acf.facebook;
         const instagramLink = data.acf.instagram;
         const cellphoneNumber = data.acf.cellnumber;
-       clone.querySelector(".facebookLogo").href = facebookLink;
+        clone.querySelector(".facebookLogo").href = facebookLink;
         clone.querySelector(".instagramLogo").href = instagramLink;
-        clone.querySelector(".phoneNumber").textContent= cellphoneNumber;
+        clone.querySelector(".phoneNumber").textContent = cellphoneNumber;
         document.querySelector("main").appendChild(clone);
     });
-                 }
+}
 
 
 
-    getContact();
+getContact();
