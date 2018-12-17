@@ -1,11 +1,26 @@
 .postLeft {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "img posttitle"
-        "image postcontent"
-        "footer footer";
+        "img postcontent";
+}
+.postRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "posttitle img"
+        "postcontent img";
 }
 
-.postTitle
-.img
-.postContent
+.postTitle {
+    grid-area: posttitle;
+}
+
+.img {
+    grid-area: img;
+}
+
+.postContent {
+    grid-area: postcontent;
+}
