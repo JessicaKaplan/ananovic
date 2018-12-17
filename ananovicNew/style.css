@@ -1,7 +1,144 @@
+/*
+my story page
+*/
 
 
+.headerGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "SMLinks logo lang"
+        ". navbar .";
+
+}
+
+.socialMediaLinks {
+    display: grid;
+    grid-area: SMLinks;
+    grid-template-areas: "instaicon fbicon";
+}
+
+.facebookIcon {
+    grid-area: fbicon;
+    display: inline;
+
+}
+
+.instagramIcon {
+    grid-area: instaicon;
+    display: inline;
+
+}
+
+.logo {
+    grid-area: logo;
+}
+
+/*.nav {
+    display: flex;
+    align-content: center;
+}*/
+
+.navbar {
+    grid-area: navbar;
 
 
+}
+
+.lang {
+    grid-area: lang;
+}
+img {
+    max-width: 100%;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+
+}
+
+a {
+    text-decoration: none;
+
+    padding: .2em
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left1 right1"
+        "left2 right2"
+        "left3 right3"
+        "left4 right4"
+        "left5 right5"
+        "left6 right6"
+        "left7 right7";
+}
+
+.left1 {
+    grid-area: left1;
+    padding: 1em;
+}
+
+.right1 {
+    grid-area: right1;
+
+}
+
+.left2 {
+    grid-area: left2;
+    padding: 1em;
+}
+
+.right2 {
+    grid-area: right2;
+}
+
+.left3 {
+    grid-area:left3;
+    padding: 1em;
+}
+
+.right3 {
+    grid-area: right3;
+}
+
+.left4 {
+    grid-area: left4;
+    padding: 1em;
+}
+
+.right4 {
+    grid-area: right4;
+}
+
+.left5 {
+    grid-area:left5;
+    padding: 1em;
+}
+
+.right5 {
+    grid-area:right5;
+}
+
+.left6 {
+    grid-area:left6;
+    padding: 1em;
+}
+
+.right6 {
+    grid-area:right6;
+}
+
+.left7 {
+    grid-area:left7;
+    padding: 1em;
+}
+
+.right7 {
+    grid-area:right7;
+}
 
 
 
