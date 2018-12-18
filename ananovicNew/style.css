@@ -2,6 +2,35 @@
 my story page
 */
 
+/*h2 {
+    text-align: center;
+}
+
+p {
+   text-align: center;
+}*/
+@import url("https://fonts.googleapis.com/css?family=GFS+Didot");
+
+body {
+    font-style: normal;
+    font-family: "GFS Didot", serif;
+    font: "GFS Didot", serif;
+    color: black;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.current {
+    color: grey;
+    text-decoration: underline;
+
+}
 
 .headerGrid {
     display: grid;
@@ -9,6 +38,7 @@ my story page
     grid-template-areas:
         "SMLinks logo lang"
         ". navbar .";
+    background-color: white;
 
 }
 
@@ -16,22 +46,32 @@ my story page
     display: grid;
     grid-area: SMLinks;
     grid-template-areas: "instaicon fbicon";
+    grid-column-gap: 1em;
+
 }
 
 .facebookIcon {
     grid-area: fbicon;
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5em;
 
 }
 
 .instagramIcon {
     grid-area: instaicon;
-    display: inline;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+    /*border-right-style: solid;
+    border-right-width: medium;*/
 
 }
 
 .logo {
     grid-area: logo;
+    display: flex;
+    justify-content: center;
 }
 
 /*.nav {
@@ -41,107 +81,315 @@ my story page
 
 .navbar {
     grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
 
 
 }
 
 .lang {
     grid-area: lang;
+    display: flex;
+    justify-content: flex-end;
 }
+
 img {
     max-width: 100%;
 }
 
-ul li {
-    list-style-type: none;
+li {
     display: inline;
+    padding: .5em;
+
+}
+
+ul {
+    display: inline;
+    padding-left: unset;
 
 }
 
 a {
     text-decoration: none;
-
-    padding: .2em
+    color: black;
 }
 
 .contentGrid {
     display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "left1 right1"
+    grid-template-areas:
+        "left1 right1"
         "left2 right2"
         "left3 right3"
         "left4 right4"
         "left5 right5"
         "left6 right6"
-        "left7 right7";
+        "left7 right7"
+        "footer footer";
 }
 
 .left1 {
     grid-area: left1;
-    padding: 1em;
+     margin-left: 2em;
 }
 
 .right1 {
+
     grid-area: right1;
+    align-self: center;
+    margin-right: 2em;
+     padding: 2em;
+
+    /*line-height: 90px; */
+
 
 }
 
+/*.right1 p {
+    margin-left: 7em;
+    margin-right: 7em;
+}*/
+
 .left2 {
     grid-area: left2;
-    padding: 1em;
+    align-self: center;
+    padding: 2em;
+     margin-left: 2em;
+
 }
 
 .right2 {
     grid-area: right2;
+margin-right: 2em;
 }
 
 .left3 {
-    grid-area:left3;
-    padding: 1em;
+    grid-area: left3;
+     margin-left: 2em;
 }
 
 .right3 {
     grid-area: right3;
+    align-self: center;
+    margin-right: 2em;
+    padding: 2em;
 }
 
 .left4 {
     grid-area: left4;
-    padding: 1em;
+    align-self: center;
+    padding: 2em;
+     margin-left: 2em;
 }
 
 .right4 {
     grid-area: right4;
+    margin-right: 2em;
 }
 
 .left5 {
-    grid-area:left5;
-    padding: 1em;
+    grid-area: left5;
+     margin-left: 2em;
 }
 
 .right5 {
-    grid-area:right5;
+    grid-area: right5;
+    align-self: center;
+    margin-right: 2em;
+    padding: 2em;
+  /*  border-style:dotted;
+    border-width: thin;
+    border-color: grey;*/
 }
 
 .left6 {
-    grid-area:left6;
-    padding: 1em;
+    grid-area: left6;
+    align-self: center;
+    padding: 2em;
+     margin-left: 2em;
 }
 
 .right6 {
-    grid-area:right6;
+    grid-area: right6;
+    margin-right: 2em;
 }
 
 .left7 {
-    grid-area:left7;
-    padding: 1em;
+    grid-area: left7;
+     margin-left: 2em;
 }
 
 .right7 {
-    grid-area:right7;
+    grid-area: right7;
+    align-self: center;
+   margin-right: 2em;
+    padding: 2em;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+/*contact page*/
+.contactGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "contactHeading"
+        "contactText"
+        "footer";
+    background-color: #F7F4F4;
+    height: 300px;
+    width: 400px;
+    justify-content: center;
+    padding: 2em;
+    margin: 0 auto;
+
+
+}
+
+.contactHeading {
+    display: flex;
+    justify-content: center;
+    grid-area: contactHeading;
+    text-align: center;
+
+}
+
+.contact {
+    grid-area: contactText;
+    display: flex;
+    justify-content: center;
+    line-height: 2em;
+    text-align: center;
+}
+
+.backgroundImg {
+    background-image: url(Asset%202@4x.png);
+    /* background-size: 100vw;*/
+
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*faq page*/
+
+.faqgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "FAQHeading FAQHeading"
+        "FAQ1 FAQ2"
+        "FAQ3 FAQ4"
+        "FAQ5 FAQ5";
+
+}
+
+.FAQHeading {
+    grid-area: FAQHeading;
+    text-align: center;
+    align-self: center;
+    padding: 2em;
+
+}
+
+.FAQ1 {
+    grid-area: FAQ1;
+    text-align: center;
+    padding: 2em;
+    background-image: url(48376407_2274793956138756_3189079587409625088_n.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.FAQ2 {
+    grid-area: FAQ2;
+    text-align: center;
+    /* align-self: center;*/
+    padding: 2em;
+}
+
+.FAQ3 {
+    grid-area: FAQ3;
+    text-align: center;
+    padding: 2em;
+}
+
+.FAQ4 {
+    grid-area: FAQ4;
+    text-align: center;
+    padding: 2em;
+}
+
+.FAQ5 {
+    grid-area: FAQ5;
+    text-align: center;
+    padding: 2em;
 }
 
 
+/*blog page*/
+.blogGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "subGridBlog blogImg";
+    border-bottom-width: thin;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    padding: 5em;
 
+}
+
+.blogImg {
+    grid-area: blogImg;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1em;
+}
+
+/*.blogTitle h2 {
+    font-size: 1em;
+}*/
+.blogTitle {
+    grid-area: blogTitle;
+    text-align: center;
+    font-size: 1.5em;
+     display: flex;
+    justify-content: center;
+}
+
+/*.blogContent p*/
+.blogContent {
+    grid-area: blogContent;
+    text-align: center;
+    font-size: 1em;
+     display: flex;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+.blogDate {
+    grid-area: blogDate;
+    text-align: center;
+     display: flex;
+    justify-content: center;
+}
+.subGridBlog{
+    grid-area: subGridBlog;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "blogTitle blogDate"
+        "blogContent blogContent";
+
+}
 /*
 @media screen and (min-width: 736px)
 */
