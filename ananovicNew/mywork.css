@@ -1,0 +1,136 @@
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    ". video video ."
+    ". left1 right1 ."
+    ". col1Title col1Title ."
+    ". left2 right2 ."
+    ". left3 right3 ."
+    ". col2Title col2Title ."
+    ". left4 right4 ."
+    ". left5 right5 ."
+    ". hempTitle hempTitle ."
+    ". left6 right6 ."
+    ". left7 right7 ."
+    ". artTitle artTitle ."
+    ". left8 right8 ."
+    ". left9 right9 .";
+
+  grid-template-rows: auto;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  text-align: center;
+}
+
+/* my work header */
+.video {
+  grid-area: video;
+}
+
+.left1 {
+  grid-area: left1;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1em;
+}
+
+.right1 {
+  grid-area: right1;
+  text-align: start;
+  font-weight: 600;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+/* collection 1 */
+/* .col1Title {
+  grid-area: col1Title;
+  padding: 1em;
+} */
+
+.left2 {
+  grid-area: left2;
+  padding: 1em;
+  text-align: start;
+}
+
+.right2 {
+  grid-area: right2;
+}
+
+.left3 {
+  grid-area: left3;
+}
+
+.right3 {
+  grid-area: right3;
+  padding: 1em;
+  text-align: start;
+}
+
+/* collection 2 */
+.col2Title {
+  grid-area: col2Title;
+}
+
+.left4 {
+  grid-area: left4;
+  padding: 1em;
+  text-align: start;
+}
+
+.right4 {
+  grid-area: right4;
+}
+
+.left5 {
+  grid-area: left5;
+}
+
+.right5 {
+  grid-area: right5;
+  padding: 1em;
+  text-align: start;
+}
+
+/* hemp jackets */
+.hempTitle {
+  grid-area: hempTitle;
+}
+
+.left6 {
+  grid-area: left6;
+}
+
+.right6 {
+  grid-area: right6;
+}
+
+.left7 {
+  grid-area: left7;
+}
+
+.right7 {
+  grid-area: right7;
+}
+
+/* art meets nature */
+.artTitle {
+  grid-area: artTitle;
+}
+
+.left8 {
+  grid-area: left8;
+}
+
+.right8 {
+  grid-area: right8;
+}
+
+.left9 {
+  grid-area: left9;
+}
+
+.right9 {
+  grid-area: right9;
+}
