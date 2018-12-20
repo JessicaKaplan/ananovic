@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Blog page</title>
+</head>
+
+<body>
+
+
+    <div class="headerGrid">
+
+        <div class="socialMediaLinks">
+            <div class="facebookIcon">
+                <a href="https://www.facebook.com/AnaNovicBrand/" target="_blank"><img src="icons/fb.png" alt="facebook"></a>
+            </div>
+
+            <div class="instagramIcon">
+                <a href="https://www.instagram.com/ana_novic/" target="_blank"><img src="icons/instacorrect.png" alt="instagram"></a>
+            </div>
+        </div>
+
+        <div class="logo">
+           <a href="mystory.html"><img src="ana_novic_black-8.png" alt="logo"></a>
+        </div>
+        <div class="toggle">
+            <label for="toggle">&#9776;</label>
+        </div>
+
+        <input type="checkbox" id="toggle">
+        <nav class="navbar">
+            <ul>
+                <li><a href="mystory.html">My story</a></li>
+                <li><a href="mywork.html">My work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html" class="current">Blog</a> </li>
+            </ul>
+        </nav>
+
+        <div class="lang">
+            <p>EN|RO</p>
+        </div>
+    </div>
+    <div class="blogMainGrid">
+        <main class="blogPage"> </main>
+
+
+        <template class="blogPage-template">
+            <article class="blogGrid">
+                <img class="blogImg" src="" alt="">
+                <div class="subGridBlog">
+                    <img class="calenderIcon" alt="calenderIcon" src="icons/calendar-512.png" width="auto" height="50px">
+                    <h2 class="blogTitle">POST TITLE</h2>
+                    <p class="shortDescription">SHORT DESCRIPTION</p>
+                    <p class="blogDate">DATE</p>
+                    <a class="detailLink">See full post</a>
+                </div>
+
+            </article>
+        </template>
+        <footer class="blogfooter">
+            <p>2018 ANA NOVIC</p>
+        </footer>
+    </div>
+</body>
+<script src="blog.js" charset="utf-8"></script>
+
+</html>
